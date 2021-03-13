@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_web/main.dart';
+import 'package:contactus/contactus.dart';
 
 class ContactPage extends StatefulWidget {
   ContactPage({Key key}) : super(key: key);
@@ -17,7 +18,21 @@ class _ContactPageState extends State<ContactPage> {
         backgroundColor: Colors.black,
         title: Appbarr(),
       ),
-      body: Center(child: Text('contact members')),
+      body: ContactUs(
+        instagram: 'thisishariharen',
+        logo: AssetImage('assets/logos/logo_circle.png'),
+        email: 'trouvailleapps@gmail.com',
+        companyName: 'Trouvaille INC',
+        phoneNumber: '+91123456789',
+        website: 'https://www.google.com',
+        githubUserName: 'hariharen9',
+        linkedinURL: 'https://www.linkedin.com/in/thisishariharen/',
+        tagLine: 'Flutter Developers',
+        twitterHandle: 'thisishariharen',
+        textColor: Colors.black87,
+        taglineColor: Colors.blueAccent,
+        companyColor: Colors.white,
+      ),
     );
   }
 }

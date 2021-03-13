@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_web/blog_page.dart';
 import 'package:portfolio_web/members_page.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import 'contact_page.dart';
 
 void main() {
@@ -46,20 +47,12 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: 100,
-        ),
-        Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'hi',
-                style: TextStyle(color: Colors.white),
-              )
-            ],
+        Expanded(
+          child: Container(
+            color: Colors.amberAccent,
+            child: Image(image: AssetImage('assets/logos/title.png')),
           ),
-        ),
+        )
       ],
     );
   }
@@ -80,8 +73,7 @@ class Appbarr extends StatelessWidget {
             Container(
                 height: 40,
                 width: 40,
-                child:
-                    Image(image: AssetImage('assets/logos/logo_circle.png'))),
+                child: Image(image: AssetImage('assets/logos/trouTITLE.png'))),
             SizedBox(
               width: 10,
             ),
@@ -115,6 +107,23 @@ class Appbarr extends StatelessWidget {
                 },
                 child: Text(
                   'Home',
+                  style: GoogleFonts.montserrat(
+                    textStyle: TextStyle(fontSize: 14),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BlogPage()),
+                  );
+                },
+                child: Text(
+                  'Blogs',
                   style: GoogleFonts.montserrat(
                     textStyle: TextStyle(fontSize: 14),
                   ),
