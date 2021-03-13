@@ -30,8 +30,37 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.black87, title: Appbarr()),
-      body: Center(child: Text('hello 2')),
+      backgroundColor: Colors.black87,
+      appBar: AppBar(backgroundColor: Colors.black, title: Appbarr()),
+      body: Body(),
+    );
+  }
+}
+
+class Body extends StatelessWidget {
+  const Body({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          height: 100,
+        ),
+        Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'hi',
+                style: TextStyle(color: Colors.white),
+              )
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
@@ -46,11 +75,31 @@ class Appbarr extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          'Trouvaille',
-          style: GoogleFonts.sacramento(
-            textStyle: TextStyle(fontSize: 36),
-          ),
+        Row(
+          children: [
+            Container(
+                height: 40,
+                width: 40,
+                child:
+                    Image(image: AssetImage('assets/logos/logo_circle.png'))),
+            SizedBox(
+              width: 10,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyHomePage()),
+                );
+              },
+              child: Text(
+                'Trouvaille',
+                style: GoogleFonts.sacramento(
+                  textStyle: TextStyle(fontSize: 36),
+                ),
+              ),
+            ),
+          ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
