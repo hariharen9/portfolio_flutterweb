@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_web/main.dart';
 
 class MembersPage extends StatefulWidget {
@@ -20,8 +21,14 @@ class _MembersPageState extends State<MembersPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('WE are TROUVAILLE.'),
+          Text(
+            'WE are TROUVAILLE.',
+            style: GoogleFonts.montserrat(
+              textStyle: TextStyle(color: Colors.white),
+            ),
+          ),
           Container(
+            margin: EdgeInsets.all(8),
             width: 200,
             height: 200,
             decoration: BoxDecoration(
@@ -54,6 +61,7 @@ class _MembersPageState extends State<MembersPage> {
               Column(
                 children: [
                   Container(
+                    margin: EdgeInsets.all(8),
                     width: 200,
                     height: 200,
                     decoration: BoxDecoration(
@@ -71,7 +79,24 @@ class _MembersPageState extends State<MembersPage> {
                   SizedBox(
                     width: 10,
                   ),
-                  Text('HARIHAREN')
+                  Text(
+                    'HARIHAREN',
+                    style: GoogleFonts.montserrat(
+                      textStyle: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: null,
+                    child: Text(
+                      'Resume',
+                      style: GoogleFonts.montserrat(
+                        textStyle: TextStyle(color: Colors.amberAccent),
+                      ),
+                    ),
+                  )
                 ],
               ),
               SizedBox(
@@ -80,6 +105,7 @@ class _MembersPageState extends State<MembersPage> {
               Column(
                 children: [
                   Container(
+                    margin: EdgeInsets.all(8),
                     width: 200,
                     height: 200,
                     decoration: BoxDecoration(
@@ -97,7 +123,24 @@ class _MembersPageState extends State<MembersPage> {
                   SizedBox(
                     width: 10,
                   ),
-                  Text('BALAGANESH')
+                  Text(
+                    'BALAGANESH',
+                    style: GoogleFonts.montserrat(
+                      textStyle: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  ElevatedButton(
+                    onPressed: null,
+                    child: Text(
+                      'Resume',
+                      style: GoogleFonts.montserrat(
+                        textStyle: TextStyle(color: Colors.amberAccent),
+                      ),
+                    ),
+                  )
                 ],
               ),
             ],
@@ -107,11 +150,3 @@ class _MembersPageState extends State<MembersPage> {
     );
   }
 }
-
-/*width: 200,
-            height: 200,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                  image: AssetImage('assets/pics/hari.jpg'), fit: BoxFit.fill),
-            ),*/
