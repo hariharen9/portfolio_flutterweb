@@ -150,11 +150,16 @@ class _HariState extends State<Hari> {
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.black,
                             borderRadius: BorderRadius.circular(45),
                           ),
                           alignment: Alignment(0.0, 0.0),
-                          child: Text("EDUCATION"),
+                          child: FittedBox(
+                            child: Image(
+                              image: AssetImage('pics/hari_ed.png'),
+                            ),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       );
                     },
@@ -188,11 +193,16 @@ class _HariState extends State<Hari> {
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.black,
                             borderRadius: BorderRadius.circular(45),
                           ),
                           alignment: Alignment(0.0, 0.0),
-                          child: Text("LICENSES & CERTIFICATIONS"),
+                          child: FittedBox(
+                            child: Image(
+                              image: AssetImage('pics/lc_hari.png'),
+                            ),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       );
                     },
@@ -226,11 +236,20 @@ class _HariState extends State<Hari> {
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.black,
                             borderRadius: BorderRadius.circular(35),
                           ),
                           alignment: Alignment(0.0, 0.0),
-                          child: Text("EXPERIENCE"),
+                          child: FittedBox(
+                            child: Container(
+                              height: 300,
+                              width: 500,
+                              child: Image(
+                                image: AssetImage('pics/exp_hari.png'),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
                         ),
                       );
                     },

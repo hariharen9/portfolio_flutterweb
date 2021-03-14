@@ -8,7 +8,7 @@ import 'bala_portfolio.dart';
 import 'contact_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Hari());
 }
 
 class MyApp extends StatelessWidget {

@@ -139,7 +139,7 @@ class _MembersPageState extends State<MembersPage> {
                           ),
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage('assets/pics/bala.jpg'),
+                              image: AssetImage('assets/pics/bala.jpeg'),
                               fit: BoxFit.fill),
                         ),
                       ),

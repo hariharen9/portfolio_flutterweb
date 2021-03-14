@@ -147,11 +147,16 @@ class _BalaState extends State<Bala> {
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.black,
                             borderRadius: BorderRadius.circular(35),
                           ),
                           alignment: Alignment(0.0, 0.0),
-                          child: Text("EDUCATION"),
+                          child: FittedBox(
+                            child: Image(
+                              image: AssetImage('pics/education_bala.png'),
+                            ),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       );
                     },
@@ -184,11 +189,16 @@ class _BalaState extends State<Bala> {
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.black,
                             borderRadius: BorderRadius.circular(35),
                           ),
                           alignment: Alignment(0.0, 0.0),
-                          child: Text("LICENSES & CERTIFICATIONS"),
+                          child: FittedBox(
+                            child: Image(
+                              image: AssetImage('pics/lc_bala.png'),
+                            ),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       );
                     },
@@ -221,11 +231,16 @@ class _BalaState extends State<Bala> {
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Colors.black,
                             borderRadius: BorderRadius.circular(35),
                           ),
                           alignment: Alignment(0.0, 0.0),
-                          child: Text("EXPERIENCE"),
+                          child: FittedBox(
+                            child: Image(
+                              image: AssetImage('pics/exp_bala.png'),
+                            ),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       );
                     },
