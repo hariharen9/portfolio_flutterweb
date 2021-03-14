@@ -23,15 +23,15 @@ class _ContactPageState extends State<ContactPage> {
         logo: AssetImage('assets/logos/logo_circle.png'),
         email: 'trouvailleapps@gmail.com',
         companyName: 'Trouvaille INC',
-        phoneNumber: '+91123456789',
-        website: 'https://www.google.com',
+        phoneNumber: '+919894545969',
         githubUserName: 'hariharen9',
-        linkedinURL: 'https://www.linkedin.com/in/thisishariharen/',
+        linkedinURL: 'https://www.linkedin.com/in/hariharen9/',
         tagLine: 'Flutter Developers',
         twitterHandle: 'thisishariharen',
         textColor: Colors.black87,
         taglineColor: Colors.blueAccent,
         companyColor: Colors.white,
+        companyFontSize: 32,
       ),
     );
   }
