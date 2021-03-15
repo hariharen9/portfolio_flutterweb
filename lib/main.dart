@@ -8,7 +8,7 @@ import 'bala_portfolio.dart';
 import 'contact_page.dart';
 
 void main() {
-  runApp(Hari());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.black,
       appBar: AppBar(backgroundColor: Colors.black, title: Appbarr()),
       body: Body(),
     );
@@ -54,6 +54,22 @@ class Body extends StatelessWidget {
             color: Colors.amberAccent,
             child: Image(image: AssetImage('assets/logos/title.png')),
           ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+              color: Colors.black,
+              height: 80,
+              width: 1000,
+              child: Text(
+                'Hey ! We are two friends who strongly believe “Anything worth doing, is worth doing badly the first time”. And just like many of you in 2020, we ran out of books to read and shows to binge. So we chose to develop free #Flutter apps to help people improve their daily life.',
+                style: GoogleFonts.montserrat(
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+              )),
         )
       ],
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:transparent_image/transparent_image.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'main.dart';
@@ -53,11 +53,22 @@ class BlogContainer1 extends StatelessWidget {
               width: 200,
               child: Padding(
                 padding: const EdgeInsets.all(4.0),
-                child: Image(image: AssetImage('assets/logos/trouTITLE.png')),
+                child: Stack(
+                  children: [
+                    Center(child: CircularProgressIndicator()),
+                    Center(
+                      child: FadeInImage.memoryNetwork(
+                        placeholder: kTransparentImage,
+                        image:
+                            'https://media-exp1.licdn.com/dms/image/C4D22AQGVy7qXSy7oiA/feedshare-shrink_800/0/1597922397162?e=1618444800&v=beta&t=zIOe1q3Z2dw_DwBicyDfMaam-Rly-3Dbvz7C9p5S_wc',
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             SizedBox(
-              width: 20,
+              width: 35,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -68,19 +79,17 @@ class BlogContainer1 extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(top: 15),
                     child: Text(
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+                      'We\'re happy to say that we just completed our first #flutter Android Mobile Application #Angst , that helps people who suffer from #anxiety . \n\nThis is a simple to use #androidapp that helps you fight your anxiety attack.',
                       style: GoogleFonts.montserrat(
                         textStyle: TextStyle(fontSize: 15),
                       ),
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    ElevatedButton(
-                        onPressed: _launchURL1, child: Text('Read more')),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: ElevatedButton(
+                      onPressed: _launchURL1, child: Text('Read more')),
                 )
               ],
             )
@@ -116,34 +125,43 @@ class BlogContainer2 extends StatelessWidget {
               width: 200,
               child: Padding(
                 padding: const EdgeInsets.all(4.0),
-                child: Image(image: AssetImage('assets/logos/trouTITLE.png')),
+                child: Stack(
+                  children: [
+                    Center(child: CircularProgressIndicator()),
+                    Center(
+                      child: FadeInImage.memoryNetwork(
+                        placeholder: kTransparentImage,
+                        image:
+                            'https://media-exp1.licdn.com/dms/image/C4D22AQGVy7qXSy7oiA/feedshare-shrink_800/0/1597922397162?e=1618444800&v=beta&t=zIOe1q3Z2dw_DwBicyDfMaam-Rly-3Dbvz7C9p5S_wc',
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             SizedBox(
-              width: 20,
+              width: 35,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  height: 130,
+                  height: 320,
                   width: 500,
                   child: Padding(
                     padding: const EdgeInsets.only(top: 15),
                     child: Text(
-                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+                      'Mental illnesses are among the most common health conditions in the United States. More than 50% will be diagnosed with a mental illness or disorder at some point in their lifetime. 57% who suffer from #anxiety don’t seek the help that they need .\n\nAre we surprised? Not exactly. With any kind of mental illness being called ‘madness’ in our country, people do not come out of the ‘closet’ and suffer in silence. . There is no shame in getting help for your #mentalillness, do whatever works for you.\n\nAnd so we developed a simple to use #Androidmobile application to help you fight your next #anxietyattack ! \n\nWe at #Trouvaille strongly believe that having a good mental health is important focus to enjoy our daily life and cope with our problems especially at times like this.',
                       style: GoogleFonts.montserrat(
                         textStyle: TextStyle(fontSize: 15),
                       ),
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    ElevatedButton(
-                        onPressed: _launchURL1, child: Text('Read more')),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 16.0),
+                  child: ElevatedButton(
+                      onPressed: _launchURL1, child: Text('Read more')),
                 )
               ],
             )

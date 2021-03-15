@@ -32,7 +32,7 @@ class _MembersPageState extends State<MembersPage> {
                   textStyle: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: 30,
+                    fontSize: 45,
                   ),
                 ),
               ),
@@ -58,7 +58,7 @@ class _MembersPageState extends State<MembersPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Divider(
-                color: Colors.black,
+                color: Colors.black87,
                 thickness: 5,
                 indent: 50,
                 endIndent: 50,

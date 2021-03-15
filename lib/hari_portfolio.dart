@@ -284,7 +284,7 @@ _launchURLEmail() async {
 
 _launchURLCV() async {
   const url =
-      'https://drive.google.com/file/d/1aNQgLF7-9q2usTPPTrtbuYYxBzLKpH3A/view?usp=sharing';
+      'https://drive.google.com/file/d/1eBz1r1bs4aRwvXrT3qe6Hf_eciStsKNV/view?usp=sharing';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
